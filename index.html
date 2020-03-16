@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>Planche à son Move</title>
+    <script>
+        function zob(filename) {
+            var aud = $('audio')[0];
+            aud.src = filename;
+            console.log("Loading " + aud.src);
+            aud.play();
+        }
+    </script>
+
+  </head>
+  <body>
+    <h1>Planche à son Move</h1>
+    <h2 onclick="zob('marc1.mp3')">Rire Marc</h2>
+    <h2 onclick="zob('marc2.mp3')">Cri Marc</h2>
+
+    <figure hidden>
+        <audio controls>
+            Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+    </figure>
+
+  </body>
+</html>
